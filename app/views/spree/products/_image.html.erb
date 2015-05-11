@@ -1,0 +1,21 @@
+
+  
+  <% if(@product.images.empty?) %>
+    <%= product_image(@product, :itemprop => "image") %>
+  <% else %>
+    <a class="zoom" href="<%= @product.images.first.attachment.url(:large)-%>" title="<%= @product.name %>" >
+      <%= product_image(@product, :itemprop => "image") %>
+    </a>
+    <div id="zoom_icon"> <%= image_tag("/assets/Zoom.png", :class => 'zoom_icon') %><p>Hover to zoom.</p></div>
+  <% end %>
+    
+
+<script type="text/javascript"> 
+<!-- Syntax : css({"propertyname":"value","propertyname":"value",...}); -->
+
+  jQuery(function($){ 
+    $('a.zoom').easyZoom({
+      css: {'position':'absolute', 'top': '70px', 'left':'740px'}
+    });
+  });
+</script>

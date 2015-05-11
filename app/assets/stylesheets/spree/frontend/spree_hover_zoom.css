@@ -1,0 +1,33 @@
+/* T. STATTER : This is a manual copy of the CSS from :   */
+/* http://cssglobe.com/jquery-plugin-easy-image-zoom/s */
+
+/* Thanks and props to the original author : */
+
+
+/*.
+You can set the position in admin, or over ride in CSS here for ID #easy_zoom
+
+e..g
+
+    #easy_zoom{
+        position:absolute;
+        top: 80px;
+        left:740px;
+        .. etc
+    }
+*/
+
+#easy_zoom{
+    width: 300px;
+    height:300px; 
+    overflow:hidden;
+    -moz-box-shadow:0 0 10px #777;
+    -webkit-box-shadow:0 0 10px #777;
+    box-shadow:0 0 10px #777;
+    /* vertical and horizontal alignment used for preloader text */
+    line-height: 300px;
+    text-align:center;
+    border:5px solid #eee;
+    background:#fff;
+    color:#333;
+}
